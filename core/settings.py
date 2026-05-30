@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-!7vn@+o@awl@art4-^-!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = "https://repomind-backend-4b80.onrender.com"
+ALLOWED_HOSTS = "repomind-backend-4b80.onrender.com"
 
 
 # Application definition
