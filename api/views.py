@@ -32,3 +32,9 @@ class ChatRepoView(APIView):
             return Response({'reply': reply}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+class Home(APIView):
+    def get(self,request):
+        try:
+            return Response({'msg':"working"})
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
